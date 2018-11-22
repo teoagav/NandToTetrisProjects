@@ -1,0 +1,90 @@
+class Jumper {
+  field boolean goingUp;
+  field boolean goingDown;
+
+  field int x;
+  field int y;
+
+  constructor Jumper new() {
+    let goingUp = false;
+    let goingDown = false;
+
+    let x = 30;
+    let y = 225;
+
+    return this;
+  }
+
+  method void dispose() {
+     do Memory.deAlloc(this);
+     return;
+  }
+
+  method boolean getGoingUp() {
+    return goingUp;
+  }
+
+  method boolean getGoingDown() {
+    return goingDown;
+  }
+
+  method void setGoingUp(boolean up) {
+    let goingUp = up;
+    return;
+  }
+  method void setGoingDown(boolean down) {
+    let goingDown = down;
+    return;
+  }
+
+  method void resetY() {
+    let y = 225;
+    return;
+  }
+
+  method void resetX() {
+    let y = 30;
+    return;
+  }
+
+  method int getX1() {
+    return x;
+  }
+  method int getX2() {
+    return x + 30;
+  }
+  method int getY1() {
+    return y;
+  }
+  method int getY2() {
+    return y + 30;
+  }
+
+  method void move() {
+    if(y = 225) {
+      let goingDown = false;
+    } else {
+      if(~goingUp) {
+        let goingDown = true;
+      }
+    }
+
+    if(y = 80) {
+      let goingUp = false;
+      let goingDown = true;
+    }
+
+    if(goingDown) {
+      let y = y + 5;
+    }
+    if(goingUp) {
+      let y = y - 5;
+    }
+    return;
+  }
+
+  method void draw() {
+    do Screen.drawRectangle(x, y, x + 30, y + 30);
+    return;
+  }
+}

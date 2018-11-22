@@ -1,0 +1,59 @@
+class Wall {
+  field int x;
+  field int y;
+
+  constructor Wall new(int leftSide) {
+    let x = leftSide;
+    let y = 180;
+
+    return this;
+  }
+
+  method void dispose() {
+     do Memory.deAlloc(this);
+     return;
+  }
+
+  method void setX(int leftSide) {
+    let x = leftSide;
+    return;
+  }
+
+  method int getX1() {
+    return x;
+  }
+  method int getX2() {
+    return x + 30;
+  }
+  method int getY1() {
+    return y;
+  }
+  method int getY2() {
+    return y + 75;
+  }
+
+  method int move() {
+    var int out;
+    let out = 0;
+    let x = x - 5;
+
+    if(x < -30) {
+      let x = 512;
+      let out = 1;
+    }
+    return out;
+  }
+
+  method void draw() {
+    var int x1;
+    var int x2;
+    var int y1;
+    var int y2;
+    if(x > -31) {
+      if(x < 512 ) {
+        do Screen.drawRectangle(Math.max(x,0), y, Math.min(x+30, 511), y + 75);
+      }
+    }
+    return;
+  }
+}
