@@ -1,14 +1,14 @@
 #ifndef __PARSER_H__
 #define __PARSER_H__
 
-#include <vector>
-#include "Command.h"
+#include <deque>
+#include "Token.h"
 
 using namespace std;
 
 class Parser {
   public:
-    vector<Command> parse(string& path, string& fileName);
+    void parse(deque<Token>& tokens, string fileName);
 };
 
 #endif

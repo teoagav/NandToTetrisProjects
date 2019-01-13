@@ -10,8 +10,8 @@ class Main {
                             // in the Square files.
 
     function void main() {
-        var SquareGame game;
-        let game = game;
+        var SquareGame game;   // added
+        let game = game;       //
         do game.run();
         do game.dispose();
         return;
