@@ -1,0 +1,1603 @@
+
+// begin class
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Main.main 3
+
+// begin subroutine body
+
+// begin var dec
+// end var dec
+
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier Array
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 10
+push constant 10
+// end term
+
+// end expression
+
+// end expression list
+
+call Array.new 1
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier Array
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 5
+push constant 5
+// end term
+
+// end expression
+
+// end expression list
+
+call Array.new 1
+// end term
+
+// end expression
+
+pop local 1
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier Array
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+// end expression list
+
+call Array.new 1
+// end term
+
+// end expression
+
+pop local 2
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+// end expression
+
+push local 0
+add
+
+// begin expression
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 4
+push constant 4
+// end term
+
+// end expression
+
+push local 0
+add
+
+// begin expression
+
+// begin term integerConstant 8
+push constant 8
+// end term
+
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 5
+push constant 5
+// end term
+
+// end expression
+
+push local 0
+add
+
+// begin expression
+
+// begin term integerConstant 4
+push constant 4
+// end term
+
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier a
+push local 0
+
+// begin expression
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+push local 1
+add
+
+// begin expression
+
+// begin term identifier a
+push local 0
+
+// begin expression
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+add
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier b
+push local 1
+
+// begin expression
+
+// begin term identifier a
+push local 0
+
+// begin expression
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+push local 0
+add
+
+// begin expression
+
+// begin term identifier a
+push local 0
+
+// begin expression
+
+// begin term identifier a
+push local 0
+
+// begin expression
+
+// begin term integerConstant 5
+push constant 5
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier b
+push local 1
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term integerConstant 7
+push constant 7
+// end term
+
+
+// begin term identifier a
+push local 0
+
+// begin expression
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+sub
+// end expression
+
+// end term
+
+
+// begin term identifier Main
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Main.double 1
+// end term
+
+sub
+// end expression
+
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+add
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+call Math.multiply 2
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+push local 2
+add
+
+// begin expression
+
+// begin term keyword null
+push constant 0
+// end term
+
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier c
+push local 2
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 2
+// end let
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term stringConstant Test 1: expected result: 5; actual result: 
+push constant 43
+call String.new 1
+push constant 84
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 49
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 120
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 53
+call String.appendChar 2
+push constant 59
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printString 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier b
+push local 1
+
+// begin expression
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printInt 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+// end expression list
+
+call Output.println 0
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term stringConstant Test 2: expected result: 40; actual result: 
+push constant 44
+call String.new 1
+push constant 84
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 50
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 120
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 52
+call String.appendChar 2
+push constant 48
+call String.appendChar 2
+push constant 59
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printString 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier a
+push local 0
+
+// begin expression
+
+// begin term integerConstant 5
+push constant 5
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printInt 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+// end expression list
+
+call Output.println 0
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term stringConstant Test 3: expected result: 0; actual result: 
+push constant 43
+call String.new 1
+push constant 84
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 51
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 120
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 48
+call String.appendChar 2
+push constant 59
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printString 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier c
+push local 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printInt 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+// end expression list
+
+call Output.println 0
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term keyword null
+push constant 0
+// end term
+
+// end expression
+
+pop local 2
+// end let
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier c
+push local 2
+// end term
+
+
+// begin term keyword null
+push constant 0
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_0
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier a
+push local 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 10
+push constant 10
+// end term
+
+// end expression
+
+// end expression list
+
+call Main.fill 2
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier a
+push local 0
+
+// begin expression
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 2
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+push local 2
+add
+
+// begin expression
+
+// begin term integerConstant 33
+push constant 33
+// end term
+
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier a
+push local 0
+
+// begin expression
+
+// begin term integerConstant 7
+push constant 7
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 2
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+push local 2
+add
+
+// begin expression
+
+// begin term integerConstant 77
+push constant 77
+// end term
+
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier a
+push local 0
+
+// begin expression
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 1
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+push local 1
+add
+
+// begin expression
+
+// begin term identifier b
+push local 1
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier c
+push local 2
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+// end statements
+
+goto endelse_0
+label endif_0
+label endelse_0
+// end if
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term stringConstant Test 4: expected result: 77; actual result: 
+push constant 44
+call String.new 1
+push constant 84
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 52
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 120
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 55
+call String.appendChar 2
+push constant 55
+call String.appendChar 2
+push constant 59
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printString 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier c
+push local 2
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printInt 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+// end expression list
+
+call Output.println 0
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term stringConstant Test 5: expected result: 110; actual result: 
+push constant 45
+call String.new 1
+push constant 84
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 53
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 120
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 49
+call String.appendChar 2
+push constant 49
+call String.appendChar 2
+push constant 48
+call String.appendChar 2
+push constant 59
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printString 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier b
+push local 1
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printInt 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+// end expression list
+
+call Output.println 0
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Main.double 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier a
+push argument 0
+// end term
+
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+call Math.multiply 2
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Main.fill 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin while
+label while_0
+
+// begin expression
+
+// begin term identifier size
+push argument 1
+// end term
+
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+gt
+// end expression
+
+not
+if-goto endwhile_0
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier size
+push argument 1
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+sub
+// end expression
+
+pop argument 1
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier size
+push argument 1
+// end term
+
+// end expression
+
+push argument 0
+add
+
+// begin expression
+
+// begin term identifier Array
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+// end expression
+
+// end expression list
+
+call Array.new 1
+// end term
+
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+// end statements
+
+goto while_0
+label endwhile_0
+// end while
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+// end class
+

@@ -1,0 +1,1958 @@
+
+// begin class
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Square.new 0
+push constant 3
+call Memory.alloc 1
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier Ax
+push argument 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier Ay
+push argument 1
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier Asize
+push argument 2
+// end term
+
+// end expression
+
+push pointer 0
+push constant 2
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin do
+push pointer 0
+
+// begin expression list
+// end expression list
+
+call Square.draw 1
+pop temp 0
+// end do
+
+
+// begin return
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Square.dispose 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Memory.deAlloc 1
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Square.draw 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+// end expression list
+
+call Screen.setColor 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Square.erase 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Screen.setColor 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Square.incSize 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end term
+
+
+// begin term integerConstant 254
+push constant 254
+// end term
+
+lt
+// end expression
+
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end term
+
+
+// begin term integerConstant 510
+push constant 510
+// end term
+
+lt
+// end expression
+
+// end term
+
+and
+// end expression
+
+not
+if-goto endif_0
+
+// begin statements
+
+// begin do
+push pointer 0
+
+// begin expression list
+// end expression list
+
+call Square.erase 1
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+add
+// end expression
+
+push pointer 0
+push constant 2
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin do
+push pointer 0
+
+// begin expression list
+// end expression list
+
+call Square.draw 1
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_0
+label endif_0
+label endelse_0
+// end if
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Square.decSize 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+gt
+// end expression
+
+not
+if-goto endif_1
+
+// begin statements
+
+// begin do
+push pointer 0
+
+// begin expression list
+// end expression list
+
+call Square.erase 1
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+sub
+// end expression
+
+push pointer 0
+push constant 2
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin do
+push pointer 0
+
+// begin expression list
+// end expression list
+
+call Square.draw 1
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_1
+label endif_1
+label endelse_1
+// end if
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Square.moveUp 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+gt
+// end expression
+
+not
+if-goto endif_2
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Screen.setColor 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+sub
+// end expression
+
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+sub
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+// end expression list
+
+call Screen.setColor 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_2
+label endif_2
+label endelse_2
+// end if
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Square.moveDown 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end term
+
+
+// begin term integerConstant 254
+push constant 254
+// end term
+
+lt
+// end expression
+
+not
+if-goto endif_3
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Screen.setColor 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+add
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+// end expression list
+
+call Screen.setColor 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+sub
+// end expression
+
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_3
+label endif_3
+label endelse_3
+// end if
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Square.moveLeft 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+gt
+// end expression
+
+not
+if-goto endif_4
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Screen.setColor 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+sub
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+sub
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+// end expression list
+
+call Screen.setColor 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_4
+label endif_4
+label endelse_4
+// end if
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Square.moveRight 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end term
+
+
+// begin term integerConstant 510
+push constant 510
+// end term
+
+lt
+// end expression
+
+not
+if-goto endif_5
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Screen.setColor 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+add
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+// end expression list
+
+call Screen.setColor 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+sub
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier size
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_5
+label endif_5
+label endelse_5
+// end if
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+// end class
+

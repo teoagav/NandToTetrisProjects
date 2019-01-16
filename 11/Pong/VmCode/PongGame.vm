@@ -1,0 +1,1769 @@
+
+// begin class
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function PongGame.new 0
+push constant 7
+call Memory.alloc 1
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin do
+
+// begin expression list
+// end expression list
+
+call Screen.clearScreen 0
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 50
+push constant 50
+// end term
+
+// end expression
+
+push pointer 0
+push constant 6
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier Bat
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 230
+push constant 230
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 229
+push constant 229
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier batWidth
+push pointer 0
+push constant 6
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 7
+push constant 7
+// end term
+
+// end expression
+
+// end expression list
+
+call Bat.new 4
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier Ball
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 253
+push constant 253
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 222
+push constant 222
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 511
+push constant 511
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 229
+push constant 229
+// end term
+
+// end expression
+
+// end expression list
+
+call Ball.new 6
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 400
+push constant 400
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Ball.setDestination 3
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 238
+push constant 238
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 511
+push constant 511
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 240
+push constant 240
+// end term
+
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 22
+push constant 22
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.moveCursor 2
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term stringConstant Score: 0
+push constant 8
+call String.new 1
+push constant 83
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 48
+call String.appendChar 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printString 1
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 3
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 4
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 2
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 5
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin return
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function PongGame.dispose 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Bat.dispose 1
+pop temp 0
+// end do
+
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Ball.dispose 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Memory.deAlloc 1
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function PongGame.newInstance 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier PongGame
+
+// begin expression list
+// end expression list
+
+call PongGame.new 0
+// end term
+
+// end expression
+
+pop static 0
+// end let
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function PongGame.getInstance 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier instance
+push static 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function PongGame.run 1
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin var dec
+// end var dec
+
+
+// begin statements
+
+// begin while
+label while_0
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term identifier exit
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+not
+// end term
+
+// end expression
+
+not
+if-goto endwhile_0
+
+// begin statements
+
+// begin while
+label while_1
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+eq
+// end expression
+
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term identifier exit
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+not
+// end term
+
+// end expression
+
+// end term
+
+and
+// end expression
+
+not
+if-goto endwhile_1
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier Keyboard
+
+// begin expression list
+// end expression list
+
+call Keyboard.keyPressed 0
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Bat.move 1
+pop temp 0
+// end do
+
+
+// begin do
+push pointer 0
+
+// begin expression list
+// end expression list
+
+call PongGame.moveBall 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 50
+push constant 50
+// end term
+
+// end expression
+
+// end expression list
+
+call Sys.wait 1
+pop temp 0
+// end do
+
+// end statements
+
+goto while_1
+label endwhile_1
+// end while
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 130
+push constant 130
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_20
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+// end expression list
+
+call Bat.setDirection 2
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_20
+label endif_20
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 132
+push constant 132
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_21
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Bat.setDirection 2
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_21
+label endif_21
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 140
+push constant 140
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_22
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+push pointer 0
+push constant 3
+add
+pop pointer 1
+pop that 0
+// end let
+
+// end statements
+
+goto endelse_22
+label endif_22
+label endelse_22
+// end if
+
+// end statements
+
+label endelse_21
+// end if
+
+// end statements
+
+label endelse_20
+// end if
+
+
+// begin while
+label while_2
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+eq
+// end expression
+
+// end term
+
+not
+// end term
+
+// end expression
+
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term identifier exit
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+not
+// end term
+
+// end expression
+
+// end term
+
+and
+// end expression
+
+not
+if-goto endwhile_2
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier Keyboard
+
+// begin expression list
+// end expression list
+
+call Keyboard.keyPressed 0
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Bat.move 1
+pop temp 0
+// end do
+
+
+// begin do
+push pointer 0
+
+// begin expression list
+// end expression list
+
+call PongGame.moveBall 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 50
+push constant 50
+// end term
+
+// end expression
+
+// end expression list
+
+call Sys.wait 1
+pop temp 0
+// end do
+
+// end statements
+
+goto while_2
+label endwhile_2
+// end while
+
+// end statements
+
+goto while_0
+label endwhile_0
+// end while
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier exit
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+not
+if-goto endif_23
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 10
+push constant 10
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 27
+push constant 27
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.moveCursor 2
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term stringConstant Game Over
+push constant 9
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 118
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printString 1
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_23
+label endif_23
+label endelse_23
+// end if
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function PongGame.moveBall 5
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin var dec
+// end var dec
+
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier ball
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Ball.move 1
+// end term
+
+// end expression
+
+push pointer 0
+push constant 2
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin if
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier wall
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+gt
+// end expression
+
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier wall
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier lastWall
+push pointer 0
+push constant 5
+add
+pop pointer 1
+push that 0
+// end term
+
+eq
+// end expression
+
+// end term
+
+not
+// end term
+
+// end expression
+
+// end term
+
+and
+// end expression
+
+not
+if-goto endif_24
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier wall
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 5
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier bat
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Bat.getLeft 1
+// end term
+
+// end expression
+
+pop local 1
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier bat
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Bat.getRight 1
+// end term
+
+// end expression
+
+pop local 2
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier ball
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Ball.getLeft 1
+// end term
+
+// end expression
+
+pop local 3
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier ball
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Ball.getRight 1
+// end term
+
+// end expression
+
+pop local 4
+// end let
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier wall
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 4
+push constant 4
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_25
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier batLeft
+push local 1
+// end term
+
+
+// begin term identifier ballRight
+push local 4
+// end term
+
+gt
+// end expression
+
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier batRight
+push local 2
+// end term
+
+
+// begin term identifier ballLeft
+push local 3
+// end term
+
+lt
+// end expression
+
+// end term
+
+or
+// end expression
+
+push pointer 0
+push constant 3
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin if
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term identifier exit
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+not
+// end term
+
+// end expression
+
+not
+if-goto endif_26
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term identifier ballRight
+push local 4
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier batLeft
+push local 1
+// end term
+
+
+// begin term integerConstant 10
+push constant 10
+// end term
+
+add
+// end expression
+
+// end term
+
+lt
+// end expression
+
+not
+if-goto endif_27
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term symbol -
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+neg
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+// end statements
+
+goto endelse_27
+label endif_27
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term identifier ballLeft
+push local 3
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier batRight
+push local 2
+// end term
+
+
+// begin term integerConstant 10
+push constant 10
+// end term
+
+sub
+// end expression
+
+// end term
+
+gt
+// end expression
+
+not
+if-goto endif_28
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+// end statements
+
+goto endelse_28
+label endif_28
+label endelse_28
+// end if
+
+// end statements
+
+label endelse_27
+// end if
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier score
+push pointer 0
+push constant 4
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+add
+// end expression
+
+push pointer 0
+push constant 4
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 22
+push constant 22
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 7
+push constant 7
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.moveCursor 2
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier score
+push pointer 0
+push constant 4
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printInt 1
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_26
+label endif_26
+label endelse_26
+// end if
+
+// end statements
+
+goto endelse_25
+label endif_25
+label endelse_25
+// end if
+
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier bouncingDirection
+push local 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Ball.bounce 2
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_24
+label endif_24
+label endelse_24
+// end if
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+// end class
+

@@ -1,0 +1,66 @@
+
+// begin class
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Main.main 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+call Math.multiply 2
+// end expression
+
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Output.printInt 1
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+// end class
+

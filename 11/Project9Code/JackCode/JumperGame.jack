@@ -1,0 +1,125 @@
+class JumperGame {
+  field Array obstacles;
+  field Jumper jumper;
+  field int score;
+
+  constructor JumperGame new() {
+    let jumper = Jumper.new();
+    let obstacles = Array.new(2);
+    let obstacles[0] = Wall.new(512);
+    let obstacles[1] = Wall.new(256);
+    let score = 0;
+
+    return this;
+  }
+
+  function boolean checkCollision(Jumper jumper, Wall wall) {
+    var boolean topLeft;
+    var boolean topRight;
+    var boolean bottomLeft;
+    var boolean bottomRight;
+    let topLeft = (jumper.getX1() > wall.getX1()) & (jumper.getX1() < wall.getX2()) & (jumper.getY1() > wall.getY1()) & (jumper.getY1() < wall.getY2());
+    let topRight = (jumper.getX2() > wall.getX1()) & (jumper.getX2() < wall.getX2()) & (jumper.getY1() > wall.getY1()) & (jumper.getY1() < wall.getY2());
+    let bottomLeft = (jumper.getX1() > wall.getX1()) & (jumper.getX1() < wall.getX2()) & (jumper.getY2() > wall.getY1()) & (jumper.getY2() < wall.getY2());
+    let bottomRight = (jumper.getX2() > wall.getX1()) & (jumper.getX2() < wall.getX2()) & (jumper.getY2() > wall.getY1()) & (jumper.getY2() < wall.getY2());
+    return topLeft | topRight | bottomLeft | bottomRight;
+  }
+
+  method void dispose() {
+    var Wall wall;
+
+     do jumper.dispose();
+     let wall = obstacles[0];
+     do wall.dispose();
+     let wall = obstacles[1];
+     do wall.dispose();
+     do obstacles.dispose();
+     do Memory.deAlloc(this);
+     return;
+  }
+
+  method void run() {
+    var boolean exit;
+    var boolean gameOver;
+    var char key;
+    var int length;
+    var int i;
+    var Wall wall;
+    var String stringScore;
+
+    let exit = false;
+    let gameOver = false;
+    let length = 2;
+    let stringScore = String.new(10);
+    do stringScore.setInt(0);
+
+    while(~exit) {
+      let key = Keyboard.keyPressed();
+
+      if (key = 81)  { let exit = true; }
+
+      let i = 0;
+      while(i < length) {
+        let wall = obstacles[i];
+        let score = score + wall.move();
+        let i = i + 1;
+      }
+
+      if (key = 131) {
+        if(~jumper.getGoingDown()) {
+          do jumper.setGoingUp(true);
+        }
+      } else {
+        do jumper.setGoingUp(false);
+      }
+      do jumper.move();
+
+      do Screen.clearScreen();
+      do jumper.draw();
+      let i = 0;
+      while(i < length) {
+        let wall = obstacles[i];
+        do wall.draw();
+        let i = i + 1;
+      }
+      do Output.moveCursor(1,1);
+      do stringScore.setInt(score);
+      do Output.printString("Score: ");
+      do Output.printString(stringScore);
+
+      let wall = obstacles[0];
+      let gameOver = JumperGame.checkCollision(jumper, wall);
+      let wall = obstacles[1];
+      let gameOver = gameOver | JumperGame.checkCollision(jumper, wall);
+
+      if(gameOver) {
+        do Screen.clearScreen();
+        do Output.moveCursor(8,20);
+        do Output.printString("Game Over! Score: ");
+        do Output.printString(stringScore);
+        while (~(key = 81) & ~(key = 82)) {
+           let key = Keyboard.keyPressed();
+        }
+        if(key = 81) {
+          let exit = true;
+        }
+        if(key = 82) {
+          let wall = obstacles[0];
+          do wall.setX(256);
+          let wall = obstacles[1];
+          do wall.setX(512);
+          let score = 0;
+          let gameOver = false;
+          do jumper.setGoingUp(false);
+          do jumper.setGoingDown(false);
+          do jumper.resetX();
+          do jumper.resetY();
+        }
+      }
+
+      do Sys.wait(10);
+    }
+    do Screen.clearScreen();
+    return;
+  }
+}

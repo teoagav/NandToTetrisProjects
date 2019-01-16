@@ -1,0 +1,981 @@
+
+// begin class
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.new 0
+push constant 4
+call Memory.alloc 1
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 30
+push constant 30
+// end term
+
+// end expression
+
+push pointer 0
+push constant 2
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 225
+push constant 225
+// end term
+
+// end expression
+
+push pointer 0
+push constant 3
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin return
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.dispose 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Memory.deAlloc 1
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.getGoingUp 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier goingUp
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.getGoingDown 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier goingDown
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.setGoingUp 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier up
+push argument 1
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.setGoingDown 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier down
+push argument 1
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.resetY 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 225
+push constant 225
+// end term
+
+// end expression
+
+push pointer 0
+push constant 3
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.resetX 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 30
+push constant 30
+// end term
+
+// end expression
+
+push pointer 0
+push constant 3
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.getX1 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.getX2 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 30
+push constant 30
+// end term
+
+add
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.getY1 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.getY2 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 30
+push constant 30
+// end term
+
+add
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.move 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 225
+push constant 225
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_0
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+// end statements
+
+goto endelse_0
+label endif_0
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term identifier goingUp
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+not
+// end term
+
+// end expression
+
+not
+if-goto endif_1
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+// end statements
+
+goto endelse_1
+label endif_1
+label endelse_1
+// end if
+
+// end statements
+
+label endelse_0
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 80
+push constant 80
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_2
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+// end statements
+
+goto endelse_2
+label endif_2
+label endelse_2
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier goingDown
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+not
+if-goto endif_3
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 5
+push constant 5
+// end term
+
+add
+// end expression
+
+push pointer 0
+push constant 3
+add
+pop pointer 1
+pop that 0
+// end let
+
+// end statements
+
+goto endelse_3
+label endif_3
+label endelse_3
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier goingUp
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+not
+if-goto endif_4
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 5
+push constant 5
+// end term
+
+sub
+// end expression
+
+push pointer 0
+push constant 3
+add
+pop pointer 1
+pop that 0
+// end let
+
+// end statements
+
+goto endelse_4
+label endif_4
+label endelse_4
+// end if
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Jumper.draw 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 30
+push constant 30
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 3
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 30
+push constant 30
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+// end class
+

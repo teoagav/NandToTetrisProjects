@@ -1,0 +1,918 @@
+
+// begin class
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function SquareGame.new 0
+push constant 2
+call Memory.alloc 1
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier Square
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 30
+push constant 30
+// end term
+
+// end expression
+
+// end expression list
+
+call Square.new 3
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin return
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function SquareGame.dispose 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Square.dispose 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Memory.deAlloc 1
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function SquareGame.moveSquare 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term identifier direction
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_6
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Square.moveUp 1
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_6
+label endif_6
+label endelse_6
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier direction
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_7
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Square.moveDown 1
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_7
+label endif_7
+label endelse_7
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier direction
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_8
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Square.moveLeft 1
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_8
+label endif_8
+label endelse_8
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier direction
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 4
+push constant 4
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_9
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Square.moveRight 1
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_9
+label endif_9
+label endelse_9
+// end if
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 5
+push constant 5
+// end term
+
+// end expression
+
+// end expression list
+
+call Sys.wait 1
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function SquareGame.run 2
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+pop local 1
+// end let
+
+
+// begin while
+label while_0
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term identifier exit
+push local 1
+// end term
+
+not
+// end term
+
+// end expression
+
+not
+if-goto endwhile_0
+
+// begin statements
+
+// begin while
+label while_1
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+eq
+// end expression
+
+not
+if-goto endwhile_1
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier Keyboard
+
+// begin expression list
+// end expression list
+
+call Keyboard.keyPressed 0
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+
+// begin do
+push pointer 0
+
+// begin expression list
+// end expression list
+
+call SquareGame.moveSquare 1
+pop temp 0
+// end do
+
+// end statements
+
+goto while_1
+label endwhile_1
+// end while
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 81
+push constant 81
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_10
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+pop local 1
+// end let
+
+// end statements
+
+goto endelse_10
+label endif_10
+label endelse_10
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 90
+push constant 90
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_11
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Square.decSize 1
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_11
+label endif_11
+label endelse_11
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 88
+push constant 88
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_12
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Square.incSize 1
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_12
+label endif_12
+label endelse_12
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 131
+push constant 131
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_13
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+// end statements
+
+goto endelse_13
+label endif_13
+label endelse_13
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 133
+push constant 133
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_14
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+// end statements
+
+goto endelse_14
+label endif_14
+label endelse_14
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 130
+push constant 130
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_15
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 3
+push constant 3
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+// end statements
+
+goto endelse_15
+label endif_15
+label endelse_15
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 132
+push constant 132
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_16
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 4
+push constant 4
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+// end statements
+
+goto endelse_16
+label endif_16
+label endelse_16
+// end if
+
+
+// begin while
+label while_2
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier key
+push local 0
+// end term
+
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+eq
+// end expression
+
+// end term
+
+not
+// end term
+
+// end expression
+
+not
+if-goto endwhile_2
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier Keyboard
+
+// begin expression list
+// end expression list
+
+call Keyboard.keyPressed 0
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+
+// begin do
+push pointer 0
+
+// begin expression list
+// end expression list
+
+call SquareGame.moveSquare 1
+pop temp 0
+// end do
+
+// end statements
+
+goto while_2
+label endwhile_2
+// end while
+
+// end statements
+
+goto while_0
+label endwhile_0
+// end while
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+// end class
+

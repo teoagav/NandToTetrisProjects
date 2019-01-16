@@ -1,0 +1,705 @@
+
+// begin class
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Wall.new 0
+push constant 2
+call Memory.alloc 1
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier leftSide
+push argument 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 180
+push constant 180
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin return
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Wall.dispose 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Memory.deAlloc 1
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Wall.setX 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier leftSide
+push argument 1
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Wall.getX1 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Wall.getX2 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 30
+push constant 30
+// end term
+
+add
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Wall.getY1 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Wall.getY2 0
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin return
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 75
+push constant 75
+// end term
+
+add
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Wall.move 1
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin var dec
+// end var dec
+
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 5
+push constant 5
+// end term
+
+sub
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term symbol -
+
+// begin term integerConstant 30
+push constant 30
+// end term
+
+neg
+// end term
+
+lt
+// end expression
+
+not
+if-goto endif_11
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 512
+push constant 512
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+// end statements
+
+goto endelse_11
+label endif_11
+label endelse_11
+// end if
+
+
+// begin return
+
+// begin expression
+
+// begin term identifier out
+push local 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Wall.draw 4
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term symbol -
+
+// begin term integerConstant 31
+push constant 31
+// end term
+
+neg
+// end term
+
+gt
+// end expression
+
+not
+if-goto endif_12
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 512
+push constant 512
+// end term
+
+lt
+// end expression
+
+not
+if-goto endif_13
+
+// begin statements
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier Math
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Math.max 2
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier Math
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier x
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 30
+push constant 30
+// end term
+
+add
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 511
+push constant 511
+// end term
+
+// end expression
+
+// end expression list
+
+call Math.min 2
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier y
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term integerConstant 75
+push constant 75
+// end term
+
+add
+// end expression
+
+// end expression list
+
+call Screen.drawRectangle 4
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_13
+label endif_13
+label endelse_13
+// end if
+
+// end statements
+
+goto endelse_12
+label endif_12
+label endelse_12
+// end if
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+// end class
+

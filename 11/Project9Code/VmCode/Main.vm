@@ -1,0 +1,71 @@
+
+// begin class
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function Main.main 1
+
+// begin subroutine body
+
+// begin var dec
+// end var dec
+
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier JumperGame
+
+// begin expression list
+// end expression list
+
+call JumperGame.new 0
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+
+// begin do
+push local 0
+
+// begin expression list
+// end expression list
+
+call JumperGame.run 1
+pop temp 0
+// end do
+
+
+// begin do
+push local 0
+
+// begin expression list
+// end expression list
+
+call JumperGame.dispose 1
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+// end class
+

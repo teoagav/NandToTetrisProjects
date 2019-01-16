@@ -1,0 +1,2343 @@
+
+// begin class
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin class var dec
+// end class var dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function JumperGame.new 0
+push constant 3
+call Memory.alloc 1
+pop pointer 0
+
+// begin subroutine body
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier Jumper
+
+// begin expression list
+// end expression list
+
+call Jumper.new 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 1
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier Array
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Array.new 1
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+add
+
+// begin expression
+
+// begin term identifier Wall
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 512
+push constant 512
+// end term
+
+// end expression
+
+// end expression list
+
+call Wall.new 1
+// end term
+
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+add
+
+// begin expression
+
+// begin term identifier Wall
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 256
+push constant 256
+// end term
+
+// end expression
+
+// end expression list
+
+call Wall.new 1
+// end term
+
+// end expression
+
+pop temp 1
+pop pointer 1
+push temp 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 2
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin return
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function JumperGame.checkCollision 4
+
+// begin subroutine body
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getX1 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getX1 1
+// end term
+
+gt
+// end expression
+
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getX1 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getX2 1
+// end term
+
+lt
+// end expression
+
+// end term
+
+and
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getY1 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getY1 1
+// end term
+
+gt
+// end expression
+
+// end term
+
+and
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getY1 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getY2 1
+// end term
+
+lt
+// end expression
+
+// end term
+
+and
+// end expression
+
+pop local 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getX2 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getX1 1
+// end term
+
+gt
+// end expression
+
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getX2 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getX2 1
+// end term
+
+lt
+// end expression
+
+// end term
+
+and
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getY1 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getY1 1
+// end term
+
+gt
+// end expression
+
+// end term
+
+and
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getY1 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getY2 1
+// end term
+
+lt
+// end expression
+
+// end term
+
+and
+// end expression
+
+pop local 1
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getX1 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getX1 1
+// end term
+
+gt
+// end expression
+
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getX1 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getX2 1
+// end term
+
+lt
+// end expression
+
+// end term
+
+and
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getY2 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getY1 1
+// end term
+
+gt
+// end expression
+
+// end term
+
+and
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getY2 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getY2 1
+// end term
+
+lt
+// end expression
+
+// end term
+
+and
+// end expression
+
+pop local 2
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getX2 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getX1 1
+// end term
+
+gt
+// end expression
+
+// end term
+
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getX2 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getX2 1
+// end term
+
+lt
+// end expression
+
+// end term
+
+and
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getY2 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getY1 1
+// end term
+
+gt
+// end expression
+
+// end term
+
+and
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier jumper
+push argument 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getY2 1
+// end term
+
+
+// begin term identifier wall
+push argument 1
+
+// begin expression list
+// end expression list
+
+call Wall.getY2 1
+// end term
+
+lt
+// end expression
+
+// end term
+
+and
+// end expression
+
+pop local 3
+// end let
+
+
+// begin return
+
+// begin expression
+
+// begin term identifier topLeft
+push local 0
+// end term
+
+
+// begin term identifier topRight
+push local 1
+// end term
+
+or
+
+// begin term identifier bottomLeft
+push local 2
+// end term
+
+or
+
+// begin term identifier bottomRight
+push local 3
+// end term
+
+or
+// end expression
+
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function JumperGame.dispose 1
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin var dec
+// end var dec
+
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Jumper.dispose 1
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier obstacles
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+
+// begin do
+push local 0
+
+// begin expression list
+// end expression list
+
+call Wall.dispose 1
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier obstacles
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+
+// begin do
+push local 0
+
+// begin expression list
+// end expression list
+
+call Wall.dispose 1
+pop temp 0
+// end do
+
+
+// begin do
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Array.dispose 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword this
+push pointer 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Memory.deAlloc 1
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+
+// begin subroutine dec
+
+// begin parameter list
+// end parameter list
+
+function JumperGame.run 7
+push argument 0
+pop pointer 0
+
+// begin subroutine body
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin var dec
+// end var dec
+
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+pop local 1
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 2
+push constant 2
+// end term
+
+// end expression
+
+pop local 3
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier String
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 10
+push constant 10
+// end term
+
+// end expression
+
+// end expression list
+
+call String.new 1
+// end term
+
+// end expression
+
+pop local 6
+// end let
+
+
+// begin do
+push local 6
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call String.setInt 2
+pop temp 0
+// end do
+
+
+// begin while
+label while_0
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term identifier exit
+push local 0
+// end term
+
+not
+// end term
+
+// end expression
+
+not
+if-goto endwhile_0
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier Keyboard
+
+// begin expression list
+// end expression list
+
+call Keyboard.keyPressed 0
+// end term
+
+// end expression
+
+pop local 2
+// end let
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 2
+// end term
+
+
+// begin term integerConstant 81
+push constant 81
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_5
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+// end statements
+
+goto endelse_5
+label endif_5
+label endelse_5
+// end if
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+pop local 4
+// end let
+
+
+// begin while
+label while_1
+
+// begin expression
+
+// begin term identifier i
+push local 4
+// end term
+
+
+// begin term identifier length
+push local 3
+// end term
+
+lt
+// end expression
+
+not
+if-goto endwhile_1
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier obstacles
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression
+
+// begin term identifier i
+push local 4
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 5
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier score
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+
+// begin term identifier wall
+push local 5
+
+// begin expression list
+// end expression list
+
+call Wall.move 1
+// end term
+
+add
+// end expression
+
+push pointer 0
+push constant 2
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier i
+push local 4
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+add
+// end expression
+
+pop local 4
+// end let
+
+// end statements
+
+goto while_1
+label endwhile_1
+// end while
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 2
+// end term
+
+
+// begin term integerConstant 131
+push constant 131
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_6
+
+// begin statements
+
+// begin if
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term identifier jumper
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Jumper.getGoingDown 1
+// end term
+
+not
+// end term
+
+// end expression
+
+not
+if-goto endif_7
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+// end expression list
+
+call Jumper.setGoingUp 2
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_7
+label endif_7
+label endelse_7
+// end if
+
+// end statements
+
+goto endelse_6
+label endif_6
+
+// begin statements
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Jumper.setGoingUp 2
+pop temp 0
+// end do
+
+// end statements
+
+label endelse_6
+// end if
+
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Jumper.move 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+// end expression list
+
+call Screen.clearScreen 0
+pop temp 0
+// end do
+
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Jumper.draw 1
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+pop local 4
+// end let
+
+
+// begin while
+label while_2
+
+// begin expression
+
+// begin term identifier i
+push local 4
+// end term
+
+
+// begin term identifier length
+push local 3
+// end term
+
+lt
+// end expression
+
+not
+if-goto endwhile_2
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier obstacles
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression
+
+// begin term identifier i
+push local 4
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 5
+// end let
+
+
+// begin do
+push local 5
+
+// begin expression list
+// end expression list
+
+call Wall.draw 1
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier i
+push local 4
+// end term
+
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+add
+// end expression
+
+pop local 4
+// end let
+
+// end statements
+
+goto while_2
+label endwhile_2
+// end while
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.moveCursor 2
+pop temp 0
+// end do
+
+
+// begin do
+push local 6
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier score
+push pointer 0
+push constant 2
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+// end expression list
+
+call String.setInt 2
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term stringConstant Score: 
+push constant 7
+call String.new 1
+push constant 83
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printString 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier stringScore
+push local 6
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printString 1
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier obstacles
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 5
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier JumperGame
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier jumper
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier wall
+push local 5
+// end term
+
+// end expression
+
+// end expression list
+
+call JumperGame.checkCollision 2
+// end term
+
+// end expression
+
+pop local 1
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier obstacles
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 5
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier gameOver
+push local 1
+// end term
+
+
+// begin term identifier JumperGame
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier jumper
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term identifier wall
+push local 5
+// end term
+
+// end expression
+
+// end expression list
+
+call JumperGame.checkCollision 2
+// end term
+
+or
+// end expression
+
+pop local 1
+// end let
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier gameOver
+push local 1
+// end term
+
+// end expression
+
+not
+if-goto endif_8
+
+// begin statements
+
+// begin do
+
+// begin expression list
+// end expression list
+
+call Screen.clearScreen 0
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 8
+push constant 8
+// end term
+
+// end expression
+
+
+// begin expression
+
+// begin term integerConstant 20
+push constant 20
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.moveCursor 2
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term stringConstant Game Over! Score: 
+push constant 18
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 118
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 33
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 83
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printString 1
+pop temp 0
+// end do
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term identifier stringScore
+push local 6
+// end term
+
+// end expression
+
+// end expression list
+
+call Output.printString 1
+pop temp 0
+// end do
+
+
+// begin while
+label while_3
+
+// begin expression
+
+// begin term symbol ~
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier key
+push local 2
+// end term
+
+
+// begin term integerConstant 81
+push constant 81
+// end term
+
+eq
+// end expression
+
+// end term
+
+not
+// end term
+
+
+// begin term symbol ~
+
+// begin term symbol (
+
+// begin expression
+
+// begin term identifier key
+push local 2
+// end term
+
+
+// begin term integerConstant 82
+push constant 82
+// end term
+
+eq
+// end expression
+
+// end term
+
+not
+// end term
+
+and
+// end expression
+
+not
+if-goto endwhile_3
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier Keyboard
+
+// begin expression list
+// end expression list
+
+call Keyboard.keyPressed 0
+// end term
+
+// end expression
+
+pop local 2
+// end let
+
+// end statements
+
+goto while_3
+label endwhile_3
+// end while
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 2
+// end term
+
+
+// begin term integerConstant 81
+push constant 81
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_9
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term keyword true
+push constant 1
+neg
+// end term
+
+// end expression
+
+pop local 0
+// end let
+
+// end statements
+
+goto endelse_9
+label endif_9
+label endelse_9
+// end if
+
+
+// begin if
+
+// begin expression
+
+// begin term identifier key
+push local 2
+// end term
+
+
+// begin term integerConstant 82
+push constant 82
+// end term
+
+eq
+// end expression
+
+not
+if-goto endif_10
+
+// begin statements
+
+// begin let
+
+// begin expression
+
+// begin term identifier obstacles
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 5
+// end let
+
+
+// begin do
+push local 5
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 256
+push constant 256
+// end term
+
+// end expression
+
+// end expression list
+
+call Wall.setX 2
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term identifier obstacles
+push pointer 0
+push constant 0
+add
+pop pointer 1
+push that 0
+
+// begin expression
+
+// begin term integerConstant 1
+push constant 1
+// end term
+
+// end expression
+
+add
+pop pointer 1
+push that 0
+// end term
+
+// end expression
+
+pop local 5
+// end let
+
+
+// begin do
+push local 5
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 512
+push constant 512
+// end term
+
+// end expression
+
+// end expression list
+
+call Wall.setX 2
+pop temp 0
+// end do
+
+
+// begin let
+
+// begin expression
+
+// begin term integerConstant 0
+push constant 0
+// end term
+
+// end expression
+
+push pointer 0
+push constant 2
+add
+pop pointer 1
+pop that 0
+// end let
+
+
+// begin let
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+pop local 1
+// end let
+
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Jumper.setGoingUp 2
+pop temp 0
+// end do
+
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+
+// begin expression
+
+// begin term keyword false
+push constant 0
+// end term
+
+// end expression
+
+// end expression list
+
+call Jumper.setGoingDown 2
+pop temp 0
+// end do
+
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Jumper.resetX 1
+pop temp 0
+// end do
+
+
+// begin do
+push pointer 0
+push constant 1
+add
+pop pointer 1
+push that 0
+
+// begin expression list
+// end expression list
+
+call Jumper.resetY 1
+pop temp 0
+// end do
+
+// end statements
+
+goto endelse_10
+label endif_10
+label endelse_10
+// end if
+
+// end statements
+
+goto endelse_8
+label endif_8
+label endelse_8
+// end if
+
+
+// begin do
+
+// begin expression list
+
+// begin expression
+
+// begin term integerConstant 10
+push constant 10
+// end term
+
+// end expression
+
+// end expression list
+
+call Sys.wait 1
+pop temp 0
+// end do
+
+// end statements
+
+goto while_0
+label endwhile_0
+// end while
+
+
+// begin do
+
+// begin expression list
+// end expression list
+
+call Screen.clearScreen 0
+pop temp 0
+// end do
+
+
+// begin return
+push constant 0
+return
+// end return
+
+// end statements
+
+// end subroutine body
+
+// end subroutine dec
+
+// end class
+
