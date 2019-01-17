@@ -7,28 +7,106 @@
  * This library provides two services: direct access to the computer's main
  * memory (RAM), and allocation and recycling of memory blocks. The Hack RAM
  * consists of 32,768 words, each holding a 16-bit binary number.
- */ 
+ */
 class Memory {
-
+    static Array arena;
+    static Array freelist;
     /** Initializes the class. */
     function void init() {
+      let freelist = 2048;
+      let freelist[0] = 16384 - 2048;
+      let freelist[1] = null;
+      return;
     }
 
     /** Returns the RAM value at the given address. */
     function int peek(int address) {
+      return arena[address];
     }
 
     /** Sets the RAM value at the given address to the given value. */
     function void poke(int address, int value) {
+      let arena[address] = value;
+      return;
     }
 
     /** Finds an available RAM block of the given size and returns
      *  a reference to its base address. */
     function int alloc(int size) {
+      var Array current, last;
+      var int tempSize;
+
+      if(size < 0) {
+        do Sys.error(5);
+        return null;
+      }
+      if(size < 2) {
+        let size = 2;
+      }
+
+      let current = freelist;
+      let last = null;
+      while(~(current = null)) {
+        if(current[0] > size) {
+          if(current = freelist) {
+            let freelist = freelist + size + 1;
+            let freelist[0] = current[0] - size - 1;
+            let freelist[1] = current[1];
+          } else {
+            let current[size + 1] = current[0] - size - 1;
+            let current[size + 2] = last[1];
+            let last[1] = current + size + 1;
+          }
+
+          let current[0] = size + 1;
+          let current[1] = 0;
+          return current + 1;
+        }
+
+        let last = current;
+        let current = current[1];
+      }
+
+      do Sys.error(6);
+      return null;
     }
 
     /** De-allocates the given object (cast as an array) by making
      *  it available for future allocations. */
     function void deAlloc(Array o) {
-    }    
+      var Array segment, current, last;
+      var int segmentLength;
+      let segment = o - 1;
+      let segmentLength = o[-1];
+
+      let current = freelist;
+      let last = null;
+      while(segment > current) {
+        let last = current;
+        let current = current[1];
+      }
+
+      if(current = freelist) {
+        let segment[1] = current;
+        let freelist = segment;
+      } else {
+        let segment[1] = current;
+        let last[1] = segment;
+        if((last + last[0]) = segment) {
+          let last[0] = last[0] + segment[0];
+          let last[1] = segment[1];
+          let segment[0] = 0;
+          let segment[1] = 0;
+          let segment = last;
+        }
+      }
+
+      if((segment + segment[0]) = current) {
+        let segment[0] = segment[0] + current[0];
+        let segment[1] = current[1];
+        let current[0] = 0;
+        let current[1] = 0;
+      }
+      return;
+    }
 }

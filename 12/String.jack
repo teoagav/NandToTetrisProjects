@@ -11,54 +11,150 @@
  * string-oriented operations.
  */
 class String {
+    field Array contents;
+    field int currentSize, maxSize;
 
     /** constructs a new empty string with a maximum length of maxLength
      *  and initial length of 0. */
     constructor String new(int maxLength) {
+      if(maxLength < 0) {
+        do Sys.error(14);
+        return this;
+      }
+
+      if(maxLength = 0) {
+        let contents = null;
+      } else {
+        let contents = Array.new(maxLength);
+      }
+
+      let currentSize = 0;
+      let maxSize = maxLength;
+      return this;
     }
 
     /** Disposes this string. */
     method void dispose() {
+      if(~(maxSize = 0)) {
+        do contents.dispose();
+      }
+      return;
     }
 
     /** Returns the current length of this string. */
     method int length() {
+      return currentSize;
     }
 
     /** Returns the character at the j-th location of this string. */
     method char charAt(int j) {
+      if((j < 0) | (~(j < currentSize))) {
+        do Sys.error(15);
+        return 0;
+      }
+      return contents[j];
     }
 
     /** Sets the character at the j-th location of this string to c. */
     method void setCharAt(int j, char c) {
+      if((j < 0) | (~(j < currentSize))) {
+        do Sys.error(16);
+        return;
+      }
+      let contents[j] = c;
+      return;
     }
 
     /** Appends c to this string's end and returns this string. */
     method String appendChar(char c) {
+      if(currentSize = maxSize) {
+        do Sys.error(17);
+        return this;
+      }
+      let contents[currentSize] = c;
+      let currentSize = currentSize + 1;
+      return this;
+    }
+
+    method void appendCharSetInt(char c) {
+      if(currentSize = maxSize) {
+        do Sys.error(19);
+        return;
+      }
+      let contents[currentSize] = c;
+      let currentSize = currentSize + 1;
+      return;
     }
 
     /** Erases the last character from this string. */
     method void eraseLastChar() {
+      if(currentSize = 0) {
+        do Sys.error(18);
+        return;
+      }
+      let currentSize = currentSize - 1;
+      return;
     }
 
-    /** Returns the integer value of this string, 
+    /** Returns the integer value of this string,
      *  until a non-digit character is detected. */
     method int intValue() {
+      var int i, total, intVal;
+      var boolean negative;
+
+      let i = 0;
+      let negative = false;
+      if(contents[i] = 45) {
+        let i = i + 1;
+        let negative = true;
+      }
+
+      let total = 0;
+      while(((i < currentSize) & (contents[i] > 47)) & (contents[i] < 58)) {
+        let intVal = contents[i] - 48;
+        let total = total*10 + intVal;
+        let i = i + 1;
+      }
+      return total;
     }
 
     /** Sets this string to hold a representation of the given value. */
     method void setInt(int val) {
+      var int newVal, lastDigit;
+      var char c;
+      let currentSize = 0;
+
+      if(val < 0) {
+        let newVal = -val;
+        let c = 45;
+        do appendCharSetInt(c);
+      } else {
+        let newVal = val;
+      }
+
+      let lastDigit = newVal - ((newVal / 10)*10);
+      let c = (lastDigit + 48);
+      if(newVal < 10) {
+        do appendCharSetInt(c);
+      } else {
+        do setInt(val / 10);
+        do appendCharSetInt(c);
+      }
+      return;
     }
 
     /** Returns the new line character. */
     function char newLine() {
+      return 128;
     }
 
     /** Returns the backspace character. */
     function char backSpace() {
+      return 129;
     }
 
     /** Returns the double quote (") character. */
     function char doubleQuote() {
+      return 34;
     }
 }
